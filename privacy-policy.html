@@ -1,0 +1,264 @@
+<title>Limitless By AI Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Literata:opsz,wght@18..144,400;18..144,500;18..144,600&display=swap">
+<style>
+  :root{
+    --bg:#FAF9F7;
+    --surface:#FFFFFF;
+    --text:#1B1E2B;
+    --text-muted:#5C6178;
+    --border:#E6E3DD;
+    --accent:#6C3DDB;
+    --accent-2:#2E75B6;
+    --mark:#EFE9FB;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14121C;
+      --surface:#1B1926;
+      --text:#EDEBF5;
+      --text-muted:#A7A3BC;
+      --border:#332F44;
+      --accent:#B69CF2;
+      --accent-2:#7FB2E8;
+      --mark:#2A2440;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14121C;
+    --surface:#1B1926;
+    --text:#EDEBF5;
+    --text-muted:#A7A3BC;
+    --border:#332F44;
+    --accent:#B69CF2;
+    --accent-2:#7FB2E8;
+    --mark:#2A2440;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Literata","Iowan Old Style",Georgia,serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent-2);}
+  .wrap{
+    max-width:700px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  header.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:48px;
+  }
+  .mark{
+    width:40px;height:40px;flex:none;
+    border-radius:11px;
+    background:linear-gradient(135deg,var(--accent-2),var(--accent));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .mark svg{width:24px;height:24px;}
+  .brandname{
+    font-family:"Poppins",sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    letter-spacing:0.01em;
+  }
+  .kicker{
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 10px;
+  }
+  h1{
+    font-family:"Poppins",sans-serif;
+    font-weight:700;
+    font-size:clamp(1.8rem,4vw,2.4rem);
+    line-height:1.15;
+    text-wrap:balance;
+    margin:0 0 8px;
+  }
+  .meta{
+    color:var(--text-muted);
+    font-size:0.92rem;
+    margin:0 0 40px;
+  }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px 24px;
+    margin-bottom:48px;
+  }
+  .toc-label{
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    margin:0 0 10px;
+  }
+  .toc ol{
+    margin:0;padding-left:1.2em;
+    columns:2;
+    column-gap:24px;
+    font-size:0.92rem;
+  }
+  .toc li{margin-bottom:6px;break-inside:avoid;}
+  .toc a{text-decoration:none;color:var(--text);}
+  .toc a:hover{color:var(--accent-2);}
+
+  section{margin-bottom:40px;}
+  h2{
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+    font-size:1.15rem;
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin:0 0 14px;
+    scroll-margin-top:24px;
+  }
+  h2 .num{
+    color:var(--accent);
+    font-variant-numeric:tabular-nums;
+    font-size:0.95rem;
+  }
+  p{margin:0 0 14px;max-width:64ch;}
+  ul{margin:0 0 14px;padding-left:1.3em;}
+  li{margin-bottom:6px;}
+  mark{background:var(--mark);color:var(--text);padding:0 3px;border-radius:3px;}
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 14px;
+    font-size:0.92rem;
+  }
+  th,td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  th{
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+    font-size:0.78rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+
+  footer{
+    border-top:1px solid var(--border);
+    padding-top:28px;
+    margin-top:56px;
+    color:var(--text-muted);
+    font-size:0.88rem;
+  }
+  footer a{color:var(--accent-2);}
+</style>
+
+<div class="wrap">
+  <header class="brand">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="8" cy="12" r="4.4" stroke="white" stroke-width="2.1"/>
+        <circle cx="16" cy="12" r="4.4" stroke="white" stroke-width="2.1"/>
+      </svg>
+    </div>
+    <div class="brandname">Limitless By AI</div>
+  </header>
+
+  <p class="kicker">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective September 5, 2026 &nbsp;·&nbsp; Applies to the Limitless By AI channel and its content&#8209;publishing app</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p class="toc-label">On this page</p>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#what-we-process">What we process</a></li>
+      <li><a href="#what-we-dont-collect">What we don't collect</a></li>
+      <li><a href="#third-party">Third-party platforms</a></li>
+      <li><a href="#storage">Storage &amp; security</a></li>
+      <li><a href="#retention">Retention</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p><strong>Limitless By AI</strong> publishes short-form AI/SaaS-tool videos to YouTube, TikTok, and Instagram under the handle <mark>@limitlessbyai</mark>, using a companion content-automation app built for internal use only. This app publishes exclusively to our own accounts on those platforms &mdash; it is not a public tool, and it has no other users. This policy explains what data the app processes to do that, and what it deliberately does not collect.</p>
+  </section>
+
+  <section id="what-we-process">
+    <h2><span class="num">02</span> What we process</h2>
+    <p>To publish our own videos, the app stores OAuth access and refresh tokens issued by YouTube, TikTok, and Instagram for our own connected accounts, along with basic upload metadata (titles, descriptions, thumbnails, scheduling times) for the videos we publish. These tokens are used only to call each platform's official publishing API on our behalf.</p>
+  </section>
+
+  <section id="what-we-dont-collect">
+    <h2><span class="num">03</span> What we don't collect</h2>
+    <p>Because the app has no viewers, followers, or third-party users of its own, it does not collect or process:</p>
+    <ul>
+      <li>Personal data from anyone who watches, follows, comments on, or messages our channel &mdash; those interactions happen entirely on YouTube, TikTok, and Instagram, under each platform's own privacy policy.</li>
+      <li>Any other creator's account credentials, tokens, or content.</li>
+      <li>Payment, financial, or government ID information of any kind.</li>
+    </ul>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">04</span> Third-party platforms</h2>
+    <table>
+      <thead>
+        <tr><th>Platform</th><th>Integration</th><th>Their policy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>YouTube / Google</td><td>YouTube Data API v3</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
+        <tr><td>TikTok</td><td>Content Posting API</td><td><a href="https://www.tiktok.com/legal/page/us/privacy-policy/en" target="_blank" rel="noopener">TikTok Privacy Policy</a></td></tr>
+        <tr><td>Instagram / Meta</td><td>Meta Graph API</td><td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a></td></tr>
+      </tbody>
+    </table>
+    <p>Each platform governs its own collection and use of data from its users; we encourage you to review their policies directly.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="num">05</span> Storage &amp; security</h2>
+    <p>OAuth tokens and upload metadata are stored in credentials and workflow storage we control directly, are never sold or shared with any third party beyond the platform each token was issued by, and access is limited to the channel's operator.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">06</span> Retention</h2>
+    <p>We retain OAuth tokens for as long as the connected account remains active with our publishing app, and delete them once a platform is disconnected or a token is revoked. Upload metadata is retained for our own internal record-keeping of what we've published.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">07</span> Children's privacy</h2>
+    <p>Our app and this policy are not directed at children, and we do not knowingly collect data from children through it. Our published videos are general-audience content about AI and SaaS tools.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">08</span> Changes to this policy</h2>
+    <p>We may update this policy as the channel and its tooling evolve. The effective date at the top of this page reflects the most recent revision.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">09</span> Contact</h2>
+    <p>Questions about this policy can be sent via direct message to <mark>@limitlessbyai</mark> on YouTube, TikTok, or Instagram.</p>
+  </section>
+
+  <footer>
+    <a href="terms-of-service">Read our Terms of Service</a> &nbsp;·&nbsp; Limitless By AI
+  </footer>
+</div>
